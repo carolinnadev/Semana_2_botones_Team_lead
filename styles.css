@@ -491,26 +491,3 @@ body {
   box-shadow: 0 4px 15px rgba(17, 24, 39, 0.3);
 }
 .btn-premium:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(109, 40, 217, 0.4); }
-
-/* Ejercicio 100: Diseño Original */
-.btn-original {
-  background: linear-gradient(270deg, #1565C0, #6D28D9, #B91C1C);
-  background-size: 300% 300%;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: gradientMotion 5s ease infinite;
-}
-.btn-original::before {
-  content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
-  background: linear-gradient(to right, transparent, rgba(255,255,255,0.6), transparent);
-  transform: skewX(-20deg); transition: left 0.5s ease;
-}
-.btn-original:hover {
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 0 15px #22D3EE;
-}
-.btn-original:hover::before { left: 150%; }
